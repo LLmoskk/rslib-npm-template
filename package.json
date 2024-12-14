@@ -1,0 +1,52 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "private": false,
+  "repository": "",
+  "author": "",
+  "description": "",
+  "keywords": [],
+  "type": "module",
+  "bin": {
+    "create-project": "./bin/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "build:example": "rsbuild build",
+    "preview:example": "rsbuild preview --open",
+    "dev": "rsbuild dev --open",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.1.0",
+    "@rsbuild/plugin-react": "^1.0.7",
+    "@rslib/core": "^0.0.16",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/node": "^22.8.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "semantic-release": "^24.2.0",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  }
+}
