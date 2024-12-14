@@ -1,15 +1,13 @@
 {
-  "name": "example",
-  "version": "0.0.1",
+  "name": "",
+  "version": "0.0.0",
   "private": false,
   "repository": "",
   "author": "",
   "description": "",
   "keywords": [],
+  "license": "MIT",
   "type": "module",
-  "bin": {
-    "create-project": "./bin/cli.js"
-  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -28,11 +26,6 @@
     "dev": "rsbuild dev --open",
     "semantic-release": "semantic-release"
   },
-  "dependencies": {
-    "inquirer": "^8.2.4",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
   "devDependencies": {
     "@rsbuild/core": "^1.1.0",
     "@rsbuild/plugin-react": "^1.0.7",
@@ -44,6 +37,10 @@
     "@types/react-dom": "^18.3.1",
     "semantic-release": "^24.2.0",
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "peerDependencies": {
     "react": ">=16.9.0",
