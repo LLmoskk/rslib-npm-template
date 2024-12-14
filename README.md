@@ -21,11 +21,14 @@ This template uses GitHub Actions for automated releases. You'll need to set up 
 
 #### 1. GitHub Token (GH_TOKEN)
 
-1. Go to your GitHub account settings
-2. Navigate to Developer Settings > Personal access tokens > Tokens (classic)
+1. [Github Personal Access Token](https://github.com/settings/tokens)
+2. Click `Generate new token`
 3. Generate a new token with the following permissions:
-   - `repo` (Full control of private repositories)
-   - `write:packages` (Upload packages to GitHub Package Registry)
+   - Actions - read and write
+   - Commit statuses - read and write
+   - Contents - read and write
+   - Deployments - read and write
+   - Issues - read and write
 4. Copy the token and add it to your repository's secrets:
    - Go to your repository settings
    - Navigate to Secrets and variables > Actions
@@ -41,6 +44,12 @@ This template uses GitHub Actions for automated releases. You'll need to set up 
    - Go to your repository settings
    - Navigate to Secrets and variables > Actions
    - Create a new secret named `NPM_TOKEN`
+
+
+#### 3. Open GitHub Actions
+
+1. Go to your repository Settings Click Pages
+2. Build and deployment sorce: GitHub Actions
 
 ## Release Process
 
